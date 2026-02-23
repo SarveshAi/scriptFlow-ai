@@ -1,0 +1,14 @@
+# Python
+server/venv/
+server/__pycache__/
+*.pyc
+
+# Database (Don't push local DB files)
+server/story_db/
+
+# Environment / Secret keys 
+.env
+
+# OS files
+.DS_Store
+Thumbs.db

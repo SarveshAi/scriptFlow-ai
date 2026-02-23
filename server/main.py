@@ -11,6 +11,7 @@ app = FastAPI()
 #     allow_methods=["*"],
 #     allow_headers=["*"],
 # )
+ollama_url = os.getenv("OLLAMA_HOST", "http://localhost:11434")
 
 embeddings = OllamaEmbeddings(model="llama3")
 vector_db = Chroma(persist_directory="./story_db", embedding_function=embeddings)

@@ -1,0 +1,13 @@
+services:
+  backend:
+    build: ./server
+    container_name: scriptflow_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./server:/app
+      - ./server/story_db:/app/story_db
+    environment:
+      - OLLAMA_HOST=http://host.docker.internal:11434
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
