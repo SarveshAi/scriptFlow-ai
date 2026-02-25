@@ -4,3 +4,5 @@ langchain-ollama
 langchain-community
 chromadb
 python-dotenv
+langchain-google-genai
+langchain-chroma
