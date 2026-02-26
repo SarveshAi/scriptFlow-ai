@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 from dotenv import load_dotenv
 # from langchain_ollama import OllamaLLM, OllamaEmbeddings
-from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
 from langchain_chroma import Chroma
-from langchain_community.vectorstores import Chroma
+from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
+# from langchain_community.vectorstores import Chroma
 import os
 
 load_dotenv()
